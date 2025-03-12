@@ -1,0 +1,79 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd);
+    color: #333;
+    line-height: 1.6; /* Improves text readability */
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #ff6f61;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow for visual separation */
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Increase spacing between nav items */
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 12px 25px; /* Adjust padding for better clickability */
+    background-color: #ff3d3d;
+    border-radius: 8px; /* Slightly more rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Added scale effect */
+}
+
+.navbar li a:hover {
+    background-color: #ffbf80;
+    color: black;
+    transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+/* Section Styling */
+section {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px; /* Increased section width for larger content areas */
+    text-align: center;
+    background: #fff;
+    border-radius: 15px; /* More rounded corners for a modern feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer, larger shadow */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%; /* Footer spans across the entire page */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2); /* Shadow to separate footer */
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack navbar items on smaller screens */
+        gap: 15px;
+    }
+
+    section {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
